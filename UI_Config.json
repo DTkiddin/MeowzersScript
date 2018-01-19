@@ -1,0 +1,51 @@
+{
+  "output_file": "settings.json",
+  "respond_message": {
+    "type": "textbox",
+    "value": "/me meows at $randuser",
+    "label": "Chat Message",
+    "tooltip": "The message that the bot will display when the command is triggered.",
+  },
+  "channel_chance": {
+    "type": "slider",
+    "label": "Percentage",
+    "value": 33,
+    "min": 0,
+    "max": 100,
+    "ticks": 1,
+    "tooltip": "The percentage chance if the bot meows to the channel owner.",
+  },
+  "announcer_timer": {
+    "type": "slider",
+    "label": "Interval (min)",
+    "value": 5,
+    "min": 1,
+    "max": 180,
+    "ticks": 1,
+    "tooltip": "The amount of minutes it takes before the meow will be triggered.",
+  },
+  "file_sound": {
+    "type": "textbox",
+    "value": "meow.mp3",
+    "label": "Sound file",
+    "tooltip": "Name of the file that must be played. (Must be located in the audio folder!)",
+    "group": "Audio"
+  },
+  "volume_sound": {
+    "type": "slider",
+    "label": "Volume",
+    "value": 100,
+    "min": 0,
+    "max": 100,
+    "ticks": 1,
+    "tooltip": "The volume of the sound.",
+    "group": "Audio"
+  },
+  "silverback_nomeow": {
+    "type": "checkbox",
+    "value": false,
+    "label": "Don't meow to ocbsilverback",
+    "tooltip": "The bot shall never ever meow to the Twitch user ocb_silverback",
+    "group": "Cheats"
+  },
+}
